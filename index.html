@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#34556D" />
+    <meta name="description" content="InnovateHer is a community for women and allies who build boldly." />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>InnovateHer</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="brand" data-screen="home" aria-label="Go to home">
+          <span class="brand-mark">IH</span>
+          <span>InnovateHer</span>
+        </button>
+        <button class="icon-button" id="shareButton" aria-label="Share InnovateHer" title="Share InnovateHer">↗</button>
+      </header>
+
+      <main id="app" tabindex="-1">
+        <section class="screen active" id="home" aria-labelledby="home-title">
+          <div class="hero">
+            <p class="eyebrow">Purdue's community for bold builders</p>
+            <h1 id="home-title">Make your next idea <em>matter.</em></h1>
+            <p class="hero-copy">A welcoming space for women and allies to learn, connect, and create the future together.</p>
+            <button class="button button-light" data-screen="about">Join InnovateHer <span>→</span></button>
+            <div class="hero-spark" aria-hidden="true">✦</div>
+          </div>
+
+          <div class="install-banner" id="installBanner" hidden>
+            <div><strong>Take InnovateHer with you</strong><span>Install the club app on your phone.</span></div>
+            <button class="button button-small" id="installButton">Install</button>
+          </div>
+
+          <div class="section-heading"><div><p class="eyebrow">Mark your calendar</p><h2>What's next</h2></div><button class="text-button" data-screen="events">See all →</button></div>
+          <article class="featured-event">
+            <div class="event-date"><strong>28</strong><span>SEP<br />2026</span></div>
+            <div><span class="tag">Featured event</span><h3>InnovateHer Hackathon</h3><p>Hillenbrand Hall · 9:00 AM</p></div>
+            <button class="round-arrow" data-screen="hackathon" aria-label="View hackathon">→</button>
+          </article>
+          <div class="announcement"><span class="announcement-icon">!</span><div><span class="eyebrow">Announcement</span><p>Applications for our fall cohort are now open.</p></div><span>→</span></div>
+        </section>
+
+        <section class="screen" id="events" aria-labelledby="events-title">
+          <p class="eyebrow">Find your people</p><h1 id="events-title">Events</h1>
+          <p class="page-intro">From first hello to final demo, there is always a place for you here.</p>
+          <div class="filter-row"><button class="filter active">Upcoming</button><button class="filter">Past events</button></div>
+          <div class="event-list">
+            <article class="event-card" data-screen="hackathon"><div class="event-date coral"><strong>28</strong><span>SEP</span></div><div><span class="tag">Hackathon</span><h3>InnovateHer Hackathon</h3><p>Sep 28 · 9:00 AM · Hillenbrand Hall</p></div><span class="chevron">›</span></article>
+            <article class="event-card"><div class="event-date green"><strong>06</strong><span>OCT</span></div><div><span class="tag">Workshop</span><h3>Build Your Personal Brand</h3><p>Oct 6 · 6:00 PM · WALC 3121</p></div><span class="chevron">›</span></article>
+            <article class="event-card"><div class="event-date yellow"><strong>19</strong><span>OCT</span></div><div><span class="tag">Community</span><h3>InnovateHer Coffee Chat</h3><p>Oct 19 · 5:30 PM · The CCO</p></div><span class="chevron">›</span></article>
+          </div>
+        </section>
+
+        <section class="screen" id="hackathon" aria-labelledby="hackathon-title">
+          <button class="back-button" data-screen="events">← Back to events</button>
+          <div class="hackathon-header"><span class="tag">September 28, 2026</span><h1 id="hackathon-title">Build something<br /><em>brilliant.</em></h1><p>One day. Big ideas. A room full of people ready to help you bring them to life.</p></div>
+          <button class="button button-primary full-width">Register for the hackathon <span>→</span></button>
+          <div class="detail-grid"><div><span class="eyebrow">Where</span><strong>Hillenbrand Hall</strong><small>East Lafayette, IN</small></div><div><span class="eyebrow">When</span><strong>9:00 AM – 9:00 PM</strong><small>Sunday, September 28</small></div></div>
+          <div class="content-block"><p class="eyebrow">The day at a glance</p><h2>Come curious. Leave changed.</h2><p>Choose a challenge, find teammates, and turn a spark into a working prototype. No experience level is required.</p></div>
+          <div class="accordion"><button>Tracks & challenges <span>+</span></button><button>Sponsors <span>+</span></button><button>FAQ <span>+</span></button></div>
+        </section>
+
+        <section class="screen" id="resources" aria-labelledby="resources-title">
+          <p class="eyebrow">Keep exploring</p><h1 id="resources-title">Resources</h1><p class="page-intro">Everything you need to stay connected to the InnovateHer community.</p>
+          <div class="resource-list"><a href="https://www.instagram.com" class="resource-item"><span class="resource-icon pink">◎</span><span><strong>Instagram</strong><small>@innovateher</small></span><span>↗</span></a><a href="https://www.linkedin.com" class="resource-item"><span class="resource-icon blue">in</span><span><strong>LinkedIn</strong><small>InnovateHer Purdue</small></span><span>↗</span></a><a href="https://discord.com" class="resource-item"><span class="resource-icon purple">⌁</span><span><strong>Community Discord</strong><small>Join the conversation</small></span><span>↗</span></a><a href="mailto:innovateher@purdue.edu" class="resource-item"><span class="resource-icon orange">@</span><span><strong>Contact the team</strong><small>innovateher@purdue.edu</small></span><span>↗</span></a></div>
+          <div class="resource-note"><span>✦</span><p>Looking for campus support? Explore <a href="https://www.purdue.edu">Purdue resources</a>.</p></div>
+        </section>
+
+        <section class="screen" id="about" aria-labelledby="about-title">
+          <div class="about-visual"><span>✦</span><p>We build<br /><em>together.</em></p></div>
+          <p class="eyebrow">A community, not a checklist</p><h1 id="about-title">There is room<br />for your <em>idea.</em></h1><p class="page-intro">InnovateHer is a student-led community empowering women and allies to explore technology, entrepreneurship, and leadership without having to do it alone.</p>
+          <button class="button button-primary full-width">Get involved <span>→</span></button>
+          <div class="values"><div><strong>01</strong><h3>Make space</h3><p>Everyone deserves a seat at the table.</p></div><div><strong>02</strong><h3>Stay curious</h3><p>Questions are the beginning of every breakthrough.</p></div><div><strong>03</strong><h3>Build boldly</h3><p>Small steps can become something extraordinary.</p></div></div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Primary navigation"><button class="nav-item active" data-screen="home"><span>⌂</span>Home</button><button class="nav-item" data-screen="events"><span>◷</span>Events</button><button class="nav-item" data-screen="hackathon"><span>✦</span>Hackathon</button><button class="nav-item" data-screen="resources"><span>↗</span>Resources</button><button class="nav-item" data-screen="about"><span>♡</span>About</button></nav>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
