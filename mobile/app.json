@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "InnovateHer",
+    "slug": "innovateher",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "description": "Purdue's community for bold builders.",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.innovateher.club"
+    },
+    "android": {
+      "package": "com.innovateher.club",
+      "adaptiveIcon": {
+        "backgroundColor": "#34556D",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
